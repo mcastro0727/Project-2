@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "password",
+=======
+    "password": "Jeannie63",
+>>>>>>> 9ba66d4f836034279f23a5c70549366e55384bbb
     "database": "bucket_besties_db",
     "host": "localhost",
     "dialect": "mysql"
