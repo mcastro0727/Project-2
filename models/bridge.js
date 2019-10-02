@@ -4,7 +4,13 @@ module.exports = function(sequelize, DataTypes) {
         activityID: DataTypes.INTEGER,
         completedByDate: DataTypes.DATE,
         completed: DataTypes.BOOLEAN
-    });
 
+    },
+    {
+        timestamps: false,
+        freezeTableName: true
+    }
+    );
+       
     return bridge
 }
