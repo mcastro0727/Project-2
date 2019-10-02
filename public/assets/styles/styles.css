@@ -1,3 +1,12 @@
-.list-group-item {
-  line-height: 2.5;
+
+.field{
+  max-width: 960px;
+  margin-left: 250px;
+  z-index: -5;
+}
+
+.jumbotron{
+  background-image: url(https://i.ytimg.com/vi/AV48vINy134/maxresdefault.jpg);
+  max-width: 960px;
+  margin-left: 250px;
 }
