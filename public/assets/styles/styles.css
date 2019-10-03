@@ -1,12 +1,45 @@
 
-.field{
-  max-width: 960px;
-  margin-left: 250px;
-  z-index: -5;
-}
 
 .jumbotron{
   background-image: url(https://i.ytimg.com/vi/AV48vINy134/maxresdefault.jpg);
-  max-width: 960px;
-  margin-left: 250px;
+  width:1200px;
+  margin-left: 225px;
+}
+
+
+#containerForm{
+background-color: black;
+padding:3px;
+border:2px solid black;
+margin: 0;
+width:320px;
+height:450px;
+position: absolute;
+top:60%;
+left:50%;
+box-sizing: border-box;
+transform: translate(-50%,-50%);
+filter:opacity(50%);
+}
+.field{
+  margin-left: 15px;
+  margin-top: 15px;
+}
+body{
+  background-color: gray;
+}
+#footer {
+  padding:5px;
+  height:50px;
+  background-color: white;
+  position: relative;
+  top:100px;
+  width:1200px;
+  margin-right: 300px;
+}
+h1{
+  color:white;
+}
+.label{
+  color:white;
 }
