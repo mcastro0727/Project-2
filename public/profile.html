@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Firebase Core JavaScript Link -->
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <!-- Specific Firebase products we want (Database) -->
@@ -19,40 +20,43 @@
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
     <!-- GeoFire Database -->
     <script src="https://cdn.firebase.com/libs/geofire/5.0.1/geofire.min.js"></script>
+    <!-- JS Files -->
+    <script src="assets/js/firebaseconfig.js"></script>
+    <script src="assets/js/index.js"></script>
+
     <title>Bucket Besties - Profile</title>
 </head>
 
 <body>
+
     <div class="jumbotron">
         <h1 class="title">Bucket Besties!</h1>
         <p class="slogan">Grab your buddy and explore the world!</p>
     </div>
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
-
         <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item">
-                    Profile
-                </a>
-
-                <a class="navbar-item">
-                    My List
-                </a>
-
-                <a class="navbar-item">
-                    Trends
-                </a>
-
-                <a class="navbar-item">
-                    Find Others
-                </a>
-            </div>
+            <header class="container masthead">
+                <div class="row" id="navigation">
+                    <div class="col">
+                        <p>Profile</p>
+                    </div>
+                    <div class="col">
+                        <p>My List</p>
+                    </div>
+                    <div class="col">
+                        <p>Trends</p>
+                    </div>
+                    <div class="col">
+                        <p>Find Others</p>
+                    </div>
+                </div>
+            </header>
         </div>
     </nav>
 
     <div class="container">
-        <h4 class="name">Name</h4>
+        <p class="name">Name</p>
         <p class="username">Username</p>
         <p class="location">Location</p>
     </div>
@@ -61,9 +65,9 @@
         <div class="add-item">
             <label class="label">Add an Item to Your Bucket List</label>
             <div class="control">
-                <input class="input" type="text" placeholder="What would you like to do?">
+                <input class="inputBucketItem" type="text" placeholder="What would you like to do?">
             </div>
-            <div class="select type">
+            <div class="selectBucketType">
                 <select>
                     <option>Category</option>
                     <option>Activity</option>
@@ -73,7 +77,7 @@
                     <option>Travel</option>
                 </select>
             </div>
-            <button class="button is-primary">Add</button>
+            <button class="submit">Add</button>
         </div>
     </div>
 
