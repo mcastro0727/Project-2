@@ -1,5 +1,12 @@
 
 
+.field{
+  max-width: 15px;
+  margin-left: 15px;
+}
+
+
+
 .jumbotron{
   background-image: url(https://i.ytimg.com/vi/AV48vINy134/maxresdefault.jpg);
   width:1200px;
@@ -42,7 +49,13 @@ h1{
   color:black;
   font-weight: bold;
 }
+<<<<<<< HEAD
 h2{
   color:skyblue;
+=======
+.label{
+  color:white;
+
+>>>>>>> bc9c30b3037d85edeb2e235cd715d9d747fc1acd
 }
 
