@@ -1,5 +1,5 @@
 var config = {
-  apiKey: "",
+  apiKey: "AIzaSyDxCQp7aTXoAlRb2nhW6lZLEEN0ZfAmo0w",
   authDomain: "bucket-besties-51cb3.firebaseapp.com",
   databaseURL: "https://bucket-besties-51cb3.firebaseio.com/",
   storageBucket: "bucket-besties-51cb3.appspot.com",
@@ -43,3 +43,6 @@ firebase.auth().onAuthStateChanged(function (firebaseUser) {
     console.log('not logged in')
   }
 })
+
+
+////////////////// Add to Bucket List ////////////////
