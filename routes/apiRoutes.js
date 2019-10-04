@@ -2,16 +2,18 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/top", (req, res) => {
+  app.get("/api/top", function (req, res) {
     db.Bridge.findAll({
       group: ['activityID'],
       attributes: ['activityID', [db.sequelize.fn('COUNT', 'activityID'), 'activityIDCount']]
     })
-    .then((data) => res.json(data))
+    .then( function(data) {
+      res.json(data)
+    })
   });
 
   // Create a new example
-  app.post("/api/adduser", (req, res) => {
+  app.post("/api/adduser", function (req, res) {
     db.users.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -28,7 +30,7 @@ module.exports = function(app) {
     .then((data) => res.json(data))
   })
 
-  app.put("/api/complete/", (req, res) => {
+  app.put("/api/complete/", function (req, res) {
     console.log(req.body);
     
     db.Bridge.update({
