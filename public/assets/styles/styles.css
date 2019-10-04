@@ -1,5 +1,12 @@
 
 
+.field{
+  max-width: 15px;
+  margin-left: 15px;
+}
+
+
+
 .jumbotron{
   background-image: url(https://i.ytimg.com/vi/AV48vINy134/maxresdefault.jpg);
   width:1200px;
@@ -42,4 +49,5 @@ h1{
 }
 .label{
   color:white;
+
 }
