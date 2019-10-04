@@ -33,14 +33,16 @@ body{
   height:50px;
   background-color: white;
   position: relative;
-  top:100px; 
+  top:110px;
+  text-align: center;
+  width:800px;
+  margin-right:250px; 
 }
 h1{
   color:black;
+  font-weight: bold;
 }
 h2{
   color:skyblue;
 }
-.label{
-  color: skyblue;
-}
+
