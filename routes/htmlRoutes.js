@@ -1,6 +1,5 @@
 var db = require("../models");
 
-const nodemailer = require('nodemailer');
 
 
 module.exports = function(app) {
@@ -30,7 +29,12 @@ module.exports = function(app) {
   app.get("/login", (req,res) =>{
     res.render("profile")
   })
+
+
+
   app.post("/send", (req, res) =>{
+    const nodemailer = require('nodemailer');
+
     const output =`<p> You have a new contact request </p>
     <P> Thank you for joing the squad </p>
     <ul>     
@@ -67,16 +71,22 @@ module.exports = function(app) {
     subject: 'registration', // Subject line
     text: `hey ${req.body.name} have successfully signed up `, // plain text body
     html: output
+
+    
 });
+
+console.log('Message sent: %s', info.messageId);
+console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+main().catch(console.error);
+
+
 
     }
 
 });
   
   
-console.log('Message sent: %s', info.messageId);
-console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-main().catch(console.error);
+
 // /////////////////////////////////////////
 
   
@@ -84,7 +94,3 @@ main().catch(console.error);
 
 
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
-    res.send("404");
-  });
-
