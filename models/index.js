@@ -40,3 +40,8 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+
+// db.authenticate()
+//   .then(() => console.log("Database connected..."))
+//   .catch (err => console,log("ERROR: " + err))
